@@ -10,20 +10,24 @@
 		491892EA2732A0F000C72355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491892E92732A0F000C72355 /* AppDelegate.swift */; };
 		491892EC2732A0F000C72355 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491892EB2732A0F000C72355 /* SceneDelegate.swift */; };
 		491892EE2732A0F000C72355 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491892ED2732A0F000C72355 /* ViewController.swift */; };
-		491892F12732A0F000C72355 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491892EF2732A0F000C72355 /* Main.storyboard */; };
 		491892F32732A0F100C72355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491892F22732A0F100C72355 /* Assets.xcassets */; };
 		491892F62732A0F100C72355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491892F42732A0F100C72355 /* LaunchScreen.storyboard */; };
+		495ED84B2732D35A00339B7F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED84A2732D35A00339B7F /* Person.swift */; };
+		A09242CD797ACEBC2090C29F /* libPods-EightShadesOfBrownScin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4B6C915B8C2EF74869C14E /* libPods-EightShadesOfBrownScin.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		156CF736106B1DC5F017DAB4 /* Pods-EightShadesOfBrownScin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EightShadesOfBrownScin.release.xcconfig"; path = "Target Support Files/Pods-EightShadesOfBrownScin/Pods-EightShadesOfBrownScin.release.xcconfig"; sourceTree = "<group>"; };
+		355AE5F607F2755AE947F0BC /* Pods-EightShadesOfBrownScin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EightShadesOfBrownScin.debug.xcconfig"; path = "Target Support Files/Pods-EightShadesOfBrownScin/Pods-EightShadesOfBrownScin.debug.xcconfig"; sourceTree = "<group>"; };
 		491892E62732A0F000C72355 /* EightShadesOfBrownScin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EightShadesOfBrownScin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		491892E92732A0F000C72355 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		491892EB2732A0F000C72355 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		491892ED2732A0F000C72355 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		491892F02732A0F000C72355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		491892F22732A0F100C72355 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		491892F52732A0F100C72355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		491892F72732A0F100C72355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		495ED84A2732D35A00339B7F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		6E4B6C915B8C2EF74869C14E /* libPods-EightShadesOfBrownScin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EightShadesOfBrownScin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A09242CD797ACEBC2090C29F /* libPods-EightShadesOfBrownScin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				491892E82732A0F000C72355 /* EightShadesOfBrownScin */,
 				491892E72732A0F000C72355 /* Products */,
+				6F1F01414617C82C9AC7DBA6 /* Pods */,
+				F70E1495114453337EB58384 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +66,29 @@
 				491892E92732A0F000C72355 /* AppDelegate.swift */,
 				491892EB2732A0F000C72355 /* SceneDelegate.swift */,
 				491892ED2732A0F000C72355 /* ViewController.swift */,
-				491892EF2732A0F000C72355 /* Main.storyboard */,
 				491892F22732A0F100C72355 /* Assets.xcassets */,
 				491892F42732A0F100C72355 /* LaunchScreen.storyboard */,
 				491892F72732A0F100C72355 /* Info.plist */,
+				495ED84A2732D35A00339B7F /* Person.swift */,
 			);
 			path = EightShadesOfBrownScin;
+			sourceTree = "<group>";
+		};
+		6F1F01414617C82C9AC7DBA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				355AE5F607F2755AE947F0BC /* Pods-EightShadesOfBrownScin.debug.xcconfig */,
+				156CF736106B1DC5F017DAB4 /* Pods-EightShadesOfBrownScin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F70E1495114453337EB58384 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6E4B6C915B8C2EF74869C14E /* libPods-EightShadesOfBrownScin.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 491892FA2732A0F100C72355 /* Build configuration list for PBXNativeTarget "EightShadesOfBrownScin" */;
 			buildPhases = (
+				59EE8E67BCD230E58376E16B /* [CP] Check Pods Manifest.lock */,
 				491892E22732A0F000C72355 /* Sources */,
 				491892E32732A0F000C72355 /* Frameworks */,
 				491892E42732A0F000C72355 /* Resources */,
@@ -127,11 +152,35 @@
 			files = (
 				491892F62732A0F100C72355 /* LaunchScreen.storyboard in Resources */,
 				491892F32732A0F100C72355 /* Assets.xcassets in Resources */,
-				491892F12732A0F000C72355 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59EE8E67BCD230E58376E16B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EightShadesOfBrownScin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		491892E22732A0F000C72355 /* Sources */ = {
@@ -140,6 +189,7 @@
 			files = (
 				491892EE2732A0F000C72355 /* ViewController.swift in Sources */,
 				491892EA2732A0F000C72355 /* AppDelegate.swift in Sources */,
+				495ED84B2732D35A00339B7F /* Person.swift in Sources */,
 				491892EC2732A0F000C72355 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +197,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		491892EF2732A0F000C72355 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				491892F02732A0F000C72355 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		491892F42732A0F100C72355 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +326,7 @@
 		};
 		491892FB2732A0F100C72355 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 355AE5F607F2755AE947F0BC /* Pods-EightShadesOfBrownScin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,7 +336,6 @@
 				INFOPLIST_FILE = EightShadesOfBrownScin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,6 +353,7 @@
 		};
 		491892FC2732A0F100C72355 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 156CF736106B1DC5F017DAB4 /* Pods-EightShadesOfBrownScin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +363,6 @@
 				INFOPLIST_FILE = EightShadesOfBrownScin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

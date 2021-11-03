@@ -1,0 +1,6 @@
+module Pods_EightShadesOfBrownScin {
+  umbrella header "Pods-EightShadesOfBrownScin-umbrella.h"
+
+  export *
+  module * { export * }
+}
