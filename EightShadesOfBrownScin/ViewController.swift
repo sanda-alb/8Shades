@@ -13,7 +13,9 @@ class ViewController: UIViewController {
 
 
     let tableView = UITableView()
-    private let image = UIImageView()
+    var photo = UIImage(named: "blackGirl")
+//    var imageView = UIImageView()
+    let text = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,18 +47,11 @@ class ViewController: UIViewController {
     }
 
     private func setupAppereance() {
-//        tableView.rowHeight = 20
-
-//        tableView.backgroundColor = UIColor.orange
-
-//        cardView.layer.cornerRadius = 10
-//        cardView.backgroundColor = UIColor.white
-
-
+//        tableView.rowHeight = 300
     }
 
     func configureTableView() {
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(CustomCell.self, forCellReuseIdentifier: "cell")
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -72,11 +67,16 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.imageView?.image = UIImage(systemName: "flame.fill")
-        cell.textLabel?.text = "Cell text: \(indexPath.row + 1)"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomCell
+        cell.label.text = text[indexPath.row]
+        cell.image.image = photo
         return cell
     }
+//    
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//            return UITableView.automaticDimension
+//    }
+    
 }
 
 
