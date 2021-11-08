@@ -8,7 +8,6 @@
 struct Person {
     let title: String?
     let url: String?
-   
 }
 
 class ScinColors {
@@ -16,7 +15,6 @@ class ScinColors {
     static func getPerson() -> [Person] {
         let baseURL = "https://thatsisterimages.s3.amazonaws.com/wp-content/uploads/2018/04/26160552/shutterstock_"
         let people = [
-            
             Person (
                     title: "Marshmellow clored scin",
                     url: baseURL + "124438054.jpg"

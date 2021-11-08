@@ -13,6 +13,7 @@
 		491892F32732A0F100C72355 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491892F22732A0F100C72355 /* Assets.xcassets */; };
 		491892F62732A0F100C72355 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491892F42732A0F100C72355 /* LaunchScreen.storyboard */; };
 		495ED84B2732D35A00339B7F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495ED84A2732D35A00339B7F /* Person.swift */; };
+		49FC4EA22739222800DBE5B0 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FC4EA12739222800DBE5B0 /* CustomCell.swift */; };
 		A09242CD797ACEBC2090C29F /* libPods-EightShadesOfBrownScin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4B6C915B8C2EF74869C14E /* libPods-EightShadesOfBrownScin.a */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		491892F52732A0F100C72355 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		491892F72732A0F100C72355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		495ED84A2732D35A00339B7F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		49FC4EA12739222800DBE5B0 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		6E4B6C915B8C2EF74869C14E /* libPods-EightShadesOfBrownScin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EightShadesOfBrownScin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 				491892F42732A0F100C72355 /* LaunchScreen.storyboard */,
 				491892F72732A0F100C72355 /* Info.plist */,
 				495ED84A2732D35A00339B7F /* Person.swift */,
+				49FC4EA12739222800DBE5B0 /* CustomCell.swift */,
 			);
 			path = EightShadesOfBrownScin;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			files = (
 				491892EE2732A0F000C72355 /* ViewController.swift in Sources */,
 				491892EA2732A0F000C72355 /* AppDelegate.swift in Sources */,
+				49FC4EA22739222800DBE5B0 /* CustomCell.swift in Sources */,
 				495ED84B2732D35A00339B7F /* Person.swift in Sources */,
 				491892EC2732A0F000C72355 /* SceneDelegate.swift in Sources */,
 			);
