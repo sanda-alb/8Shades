@@ -40,8 +40,8 @@ class CustomCell: UITableViewCell {
     private func setupLayout() {
         label.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(5)
-            make.trailing.equalToSuperview()
-            make.leading.equalToSuperview()
+            make.centerX.equalToSuperview()
+            make.width.equalToSuperview().offset(-40)
         }
         
         image.snp.makeConstraints { make in
@@ -55,8 +55,12 @@ class CustomCell: UITableViewCell {
     private func setupAppereance() {
         
         label.textColor = .brown
+        label.font = UIFont.systemFont(ofSize: 20)
         label.textAlignment = .center
+        
 
-        image.layer.cornerRadius = 40
+        image.layer.cornerRadius = 5
+        image.contentMode = .scaleAspectFill
+        image.clipsToBounds = true
     }
 }

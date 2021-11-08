@@ -14,7 +14,6 @@ class ViewController: UIViewController {
 
     let tableView = UITableView()
     var photo = UIImage(named: "blackGirl")
-//    var imageView = UIImageView()
     let text = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 
     override func viewDidLoad() {
@@ -43,7 +42,8 @@ class ViewController: UIViewController {
             make.trailing.equalToSuperview()
             make.leading.equalToSuperview()
         }
-
+        
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 30, right: 0)
     }
 
     private func setupAppereance() {
@@ -72,10 +72,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.image.image = photo
         return cell
     }
-//    
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//            return UITableView.automaticDimension
-//    }
     
 }
 
