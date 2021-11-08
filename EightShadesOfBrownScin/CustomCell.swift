@@ -39,28 +39,30 @@ class CustomCell: UITableViewCell {
     
     private func setupLayout() {
         label.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(5)
+            make.top.equalToSuperview().offset(15)
             make.centerX.equalToSuperview()
             make.width.equalToSuperview().offset(-40)
         }
         
         image.snp.makeConstraints { make in
-            make.top.equalTo(label.snp.bottom).offset(10)
+            make.top.equalTo(label.snp.bottom).offset(5)
             make.bottom.equalToSuperview()
             make.centerX.equalToSuperview()
             make.width.equalToSuperview().offset(-40)
+            make.height.equalTo(200)
         }
     }
     
     private func setupAppereance() {
         
         label.textColor = .brown
-        label.font = UIFont.systemFont(ofSize: 20)
+        label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textAlignment = .center
+        label.numberOfLines = 2
         
-
-        image.layer.cornerRadius = 5
+//        image.contentMode = .scaleAspectFit
         image.contentMode = .scaleAspectFill
         image.clipsToBounds = true
+        image.layer.cornerRadius = 5
     }
 }

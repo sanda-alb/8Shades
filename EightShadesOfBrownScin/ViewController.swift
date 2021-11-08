@@ -14,8 +14,9 @@ class ViewController: UIViewController {
 
     let tableView = UITableView()
     var photo = UIImage(named: "blackGirl")
-    let text = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
 
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,7 +33,6 @@ class ViewController: UIViewController {
 
     private func embedViews() {
         view.addSubview(tableView)
-
     }
 
     private func setupLayout() {
@@ -47,7 +47,6 @@ class ViewController: UIViewController {
     }
 
     private func setupAppereance() {
-//        tableView.rowHeight = 300
     }
 
     func configureTableView() {
@@ -66,13 +65,19 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+        let card = ScinColors.getPerson()
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomCell
-        cell.label.text = text[indexPath.row]
-        cell.image.image = photo
+        cell.label.text = card[indexPath.row].title
+        cell.image.image = card[indexPath.row].photo
+      
         return cell
     }
     
+   func tableView(_ tableView: UITableView, titleForHeaderInSection
+                                section: Int) -> String? {
+       return "8 Different Shades Of Brown Scin"
+    }
 }
+
 
 
