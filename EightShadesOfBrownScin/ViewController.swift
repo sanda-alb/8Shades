@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         setupAll()
+        title = "8 Different Shades Of Brown Scin"
     }
 
     private func setupAll() {
@@ -47,11 +48,20 @@ class ViewController: UIViewController {
     }
 
     private func setupAppereance() {
+        let navBar = navigationController?.navigationBar
+        let appearance = UINavigationBarAppearance()
+        let attrs = [
+            NSAttributedString.Key.foregroundColor: UIColor.lightText,
+            NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 25)!
+        ]
+        appearance.backgroundColor = UIColor.systemBrown
+        appearance.titleTextAttributes = attrs
+        navBar?.standardAppearance = appearance
+        navBar?.scrollEdgeAppearance = appearance
     }
 
     func configureTableView() {
         tableView.register(CustomCell.self, forCellReuseIdentifier: "cell")
-        
         tableView.delegate = self
         tableView.dataSource = self
     }
@@ -72,12 +82,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
       
         return cell
     }
-    
-   func tableView(_ tableView: UITableView, titleForHeaderInSection
-                                section: Int) -> String? {
-       return "8 Different Shades Of Brown Scin"
-    }
 }
+
 
 
 
