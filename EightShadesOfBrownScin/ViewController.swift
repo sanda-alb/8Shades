@@ -14,14 +14,12 @@ class ViewController: UIViewController {
 
     let tableView = UITableView()
     var photo = UIImage(named: "blackGirl")
-
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupAll()
-        title = "8 Different Shades Of Brown Scin"
+        title = "8 Different Shades Of Brown Skin"
     }
 
     private func setupAll() {
@@ -29,7 +27,6 @@ class ViewController: UIViewController {
         setupLayout()
         setupAppereance()
         configureTableView()
-        
     }
 
     private func embedViews() {
@@ -49,6 +46,7 @@ class ViewController: UIViewController {
 
     private func setupAppereance() {
         let navBar = navigationController?.navigationBar
+       
         let appearance = UINavigationBarAppearance()
         let attrs = [
             NSAttributedString.Key.foregroundColor: UIColor.lightText,
@@ -68,19 +66,32 @@ class ViewController: UIViewController {
 
 }
 
-
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 8
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let card = ScinColors.getPerson()
+        let card = SkinColors.getPerson()
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomCell
         cell.label.text = card[indexPath.row].title
         cell.image.image = card[indexPath.row].photo
       
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let info = SkinColors.getPerson()
+        let titleToPass = info[indexPath.row].title
+        let textToPass = info[indexPath.row].text
+
+        let infoVC = InfoViewController()
+        infoVC.label.text = titleToPass
+        infoVC.info.text = textToPass
+        navigationController?.pushViewController(infoVC, animated: true)
+        
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4904C915273A983B0030B355 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4904C914273A983B0030B355 /* InfoViewController.swift */; };
 		491892EA2732A0F000C72355 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491892E92732A0F000C72355 /* AppDelegate.swift */; };
 		491892EC2732A0F000C72355 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491892EB2732A0F000C72355 /* SceneDelegate.swift */; };
 		491892EE2732A0F000C72355 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491892ED2732A0F000C72355 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		156CF736106B1DC5F017DAB4 /* Pods-EightShadesOfBrownScin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EightShadesOfBrownScin.release.xcconfig"; path = "Target Support Files/Pods-EightShadesOfBrownScin/Pods-EightShadesOfBrownScin.release.xcconfig"; sourceTree = "<group>"; };
 		355AE5F607F2755AE947F0BC /* Pods-EightShadesOfBrownScin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EightShadesOfBrownScin.debug.xcconfig"; path = "Target Support Files/Pods-EightShadesOfBrownScin/Pods-EightShadesOfBrownScin.debug.xcconfig"; sourceTree = "<group>"; };
+		4904C914273A983B0030B355 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		491892E62732A0F000C72355 /* EightShadesOfBrownScin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EightShadesOfBrownScin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		491892E92732A0F000C72355 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		491892EB2732A0F000C72355 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				491892F72732A0F100C72355 /* Info.plist */,
 				495ED84A2732D35A00339B7F /* Person.swift */,
 				49FC4EA12739222800DBE5B0 /* CustomCell.swift */,
+				4904C914273A983B0030B355 /* InfoViewController.swift */,
 			);
 			path = EightShadesOfBrownScin;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 				491892EA2732A0F000C72355 /* AppDelegate.swift in Sources */,
 				49FC4EA22739222800DBE5B0 /* CustomCell.swift in Sources */,
 				495ED84B2732D35A00339B7F /* Person.swift in Sources */,
+				4904C915273A983B0030B355 /* InfoViewController.swift in Sources */,
 				491892EC2732A0F000C72355 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
