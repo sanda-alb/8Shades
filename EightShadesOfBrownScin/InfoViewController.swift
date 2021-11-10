@@ -7,15 +7,16 @@
 
 import UIKit
 
-class InfoViewController: UIViewController {
+final class InfoViewController: UIViewController {
     
     var info = UITextView()
     var label = UILabel()
+    
     override func viewDidLoad() {
-          super.viewDidLoad()
+        super.viewDidLoad()
         
-       setupAll()
-      }
+        setupAll()
+    }
     
     private func setupAll() {
         embedViews()
@@ -32,8 +33,6 @@ class InfoViewController: UIViewController {
     }
     
     private func setupLayout() {
-        view.backgroundColor = .white
-        
         label.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin).offset(15)
@@ -49,16 +48,15 @@ class InfoViewController: UIViewController {
     
     private func setupAppearance() {
         navigationController?.navigationBar.tintColor = .white
-        
+        view.backgroundColor = .white
+
         label.textColor = .brown
-        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.font = .boldSystemFont(ofSize: 20)
         label.textAlignment = .center
         label.numberOfLines = 2
         label.backgroundColor = .white
         
-        info.font = UIFont.systemFont(ofSize: 15)
+        info.font = .systemFont(ofSize: 15)
         info.textAlignment = .justified
-        
-        
     }
 }

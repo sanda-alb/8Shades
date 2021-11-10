@@ -5,15 +5,12 @@
 //  Created by TK_User on 03.11.2021.
 //
 
-import SnapKit
 import UIKit
 
+final class ViewController: UIViewController {
 
-class ViewController: UIViewController {
-
-
-    let tableView = UITableView()
-    var photo = UIImage(named: "blackGirl")
+    private let personInfo = SkinColors().getPerson
+    private let tableView = UITableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,24 +43,26 @@ class ViewController: UIViewController {
 
     private func setupAppereance() {
         let navBar = navigationController?.navigationBar
-       
         let appearance = UINavigationBarAppearance()
+        
         let attrs = [
             NSAttributedString.Key.foregroundColor: UIColor.lightText,
             NSAttributedString.Key.font: UIFont(name: "Helvetica", size: 25)!
         ]
-        appearance.backgroundColor = UIColor.systemBrown
+        
+        appearance.backgroundColor = .systemBrown
         appearance.titleTextAttributes = attrs
+        
         navBar?.standardAppearance = appearance
         navBar?.scrollEdgeAppearance = appearance
     }
 
     func configureTableView() {
         tableView.register(CustomCell.self, forCellReuseIdentifier: "cell")
+        
         tableView.delegate = self
         tableView.dataSource = self
     }
-
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
@@ -72,29 +71,25 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let card = SkinColors.getPerson()
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomCell
-        cell.label.text = card[indexPath.row].title
-        cell.image.image = card[indexPath.row].photo
+        let cell = tableView.dequeueReusableCell(
+            withIdentifier: "cell",
+            for: indexPath
+        ) as! CustomCell
+        
+        cell.label.text = personInfo[indexPath.row].title
+        cell.image.image = personInfo[indexPath.row].photo
       
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let info = SkinColors.getPerson()
-        let titleToPass = info[indexPath.row].title
-        let textToPass = info[indexPath.row].text
-
         let infoVC = InfoViewController()
-        infoVC.label.text = titleToPass
-        infoVC.info.text = textToPass
+        
+        infoVC.label.text = personInfo[indexPath.row].title
+        infoVC.info.text = personInfo[indexPath.row].text
+        
         navigationController?.pushViewController(infoVC, animated: true)
         
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
-
-
-
-
